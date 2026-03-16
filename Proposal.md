@@ -118,12 +118,21 @@ Docker / Podman Runtime
        │  
        ▼  
 Vulnerable Target Environment
+
+High-Level Architecture Overview
+<img width="953" height="1912" alt="arch" src="https://github.com/user-attachments/assets/bc09e0b1-c4c5-45a7-90c3-88569b1e1ce8" />
+Detailed System Architecture
+<img width="6676" height="399" alt="detailed_arch" src="https://github.com/user-attachments/assets/b33cd41d-83b8-4944-8e6f-165753f9b9cd" />
+Execution Workflow Diagram
+<img width="2619" height="1442" alt="workflow" src="https://github.com/user-attachments/assets/66edb5b7-78a3-4867-983c-f9f56b8d6576" />
+
+
 ## Environment Configuration
 
 Each exploit module can include a **vulnerable environment definition**.
 
 Example:
-
+```
 modules/exploits/linux/http/example_exploit/  
   
 vuln_env/  
@@ -138,7 +147,7 @@ image: vulnerable/webapp
 ports:  
  - 8080:80  
 startup_wait: 10
-
+```
 ---
 
 ## Command Workflow
