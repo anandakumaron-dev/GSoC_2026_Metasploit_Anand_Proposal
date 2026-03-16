@@ -277,7 +277,13 @@ I am highly motivated to contribute to the Metasploit ecosystem and help improve
 
 
 # Prototype
-
+ Still it required root for docker
 ```bash
-ruby build_vuln.rb
+root ruby build_vuln.rb
 ```
+
+
+
+https://github.com/user-attachments/assets/cc89c25a-51bc-4dcf-a401-8611ed9e3cf4
+
+
